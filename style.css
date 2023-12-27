@@ -1,0 +1,60 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f8f8; /* Light gray background */
+    font-family: 'Arial', sans-serif; /* Choose a suitable font */
+    height: 100vh; /* 100% viewport height */
+}
+
+.user-list {
+    text-align: center;
+    list-style: none;
+    padding: 0;
+}
+
+.user-list li {
+    cursor: pointer;
+    padding: 10px;
+    margin: 8px 0;
+    width: 100%; /* Adjusted width */
+    border-radius: 8px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    background-color: #ffc107; /* Vivid yellow */
+    color: #333; /* Dark text color */
+}
+
+.user-list li:hover {
+    color: #fff;
+    background-color: #007bff; /* Bright blue */
+}
+
+.post-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px; /* Add some spacing between user list and post info */
+}
+
+.post-info li {
+    padding: 14px;
+    border: 2px dashed #ccc;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    background-color: #28a745; /* Fresh green */
+    color: #333; /* Dark text color */
+}
+
+.post-info li:hover {
+    color: #fff;
+    background-color: #dc3545; /* Intense red */
+}
